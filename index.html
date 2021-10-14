@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,13 +56,31 @@
                         <ul>
                             <li class="menu-title">导航</li>
                             <li>
-                                <details off style="text-indent: 15px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
+                                <details open style="text-indent: 15px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
                                     <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 16px;">关系抽取</summary>
-                                    <li>
+                                    <!--<li>
                                         <a href="index.html" class="waves-effect">
                                             <i class="mdi mdi-code-not-equal"></i>
                                             <span> 文档级关系抽取 </span>
                                         </a>
+                                    </li>-->
+                                    <li>
+                                        <details open style="text-indent: 26px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
+                                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;">文档级关系抽取</summary>
+                                                    <li>
+                                                        <a href="index.html"  class="waves-effect">
+                                                            <i class="mdi mdi-code-not-equal"></i>
+                                                            <span> 展示样例</span>
+                                                        </a>
+                                                    </li>
+                                                    <br/>
+                                                    <li>
+                                                        <a href="re_st.html"  class="waves-effect">
+                                                            <i class="mdi mdi-code-not-equal"></i>
+                                                            <span> 输入样例</span>
+                                                        </a>
+                                                    </li>
+                                        </details>
                                     </li>
                                     </br>
                                     <li>
@@ -172,12 +190,9 @@
                                 <div class="col-xl-4 ">
                                     <div class="card">
                                         <div class="card-body active">
-                                            <h5 class="header-title mt-0  mb-3">TV series</h5>
-                                            <p class="mb-0" id="paragraph_1">《来自星星的你》是由张太侑导演，朴智恩编剧，于2013年12月18日在韩国SBS电视台首播。</p>
-                                            <p class="mb-0">该剧讲述了从外星来到朝鲜时代至400年后的现代的神秘男人都敏俊（金秀贤饰），
-                                                与身为国民顶级女演员的千颂伊（全智贤饰）陷入爱情的过程，不同星球的两人消除彼此之间的误解，克服危险追寻真爱的浪漫爱情故事。</p>
+                                            <h5 class="header-title mt-0  mb-3">Eaxmple1</h5>
+                                            <p class="mb-0" id="paragraph_1">The {[0][LOC]Canton Memorial Civic Center} is a multi - purpose arena located in {[1][LOC]Canton}, {[2][LOC]Ohio}, {[3][LOC]United States}, and is currently the home arena for the {[4][ORG]Canton Charge} of the {[5][ORG]NBA G League}. Built in {[6][TIME]1951}, previous sports teams that have played at the center include the {[7][ORG]Canton Legends} indoor football team, {[8][ORG]Canton Invaders} indoor soccer team, and {[9][ORG]Ohio Aviators} of the {[10][ORG]American Basketball Association}. The building is owned by the {[1][LOC]City of Canton} and operated by {[11][ORG]SMG}. Capacity is {[12][NUM]5,200} in the arena, and up to {[13][NUM]600} in the {[14][LOC]McKinley Room}. The facility has over the years hosted concerts, professional wrestling cards, political rallies, family shows, and features a number of annual {[15][MISC]Pro Football Hall of Fame} festival events.</p>
                                             <blockquote class="blockquote text-right">
-                                                <footer class="blockquote-footer">Baidu Baike <cite title="Source Title"><a href="https://baike.baidu.com/item/%E6%9D%A5%E8%87%AA%E6%98%9F%E6%98%9F%E7%9A%84%E4%BD%A0/12029711?fromtitle=%E6%9D%A5%E6%98%9F%E6%98%9F%E7%9A%84%E4%BD%A0&fromid=16002497&fr=aladdin" style="color: blue;">My Love from the Star</a></cite></footer>
                                             </blockquote>
                                             <button type="button" class="btn btn-primary waves-effect waves-light" id="alertify-success-1">click me</button>
                                         </div>
@@ -188,10 +203,9 @@
                                 <div class="col-xl-4 ">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="header-title mt-0  mb-3">NASA</h5>
-                                            <p class="mb-0" id="paragraph_2">Alan Bean was an American astronaut, born on March 15, 1932 in Wheeler, Texas. He received a Bachelor of Science degree at the University of Texas as Austin in 1955 and was chosen by NASA in 1963.</p>
+                                            <h5 class="header-title mt-0  mb-3">Example2</h5>
+                                            <p class="mb-0" id="paragraph_2">{[0][MISC]Paris Belongs to Us}(sometimes translated as {[1][MISC]Paris Is Ours})is a {[2][TIME]1961} {[3][LOC]French} mystery film directed by {[4][PER]Jacques Rivette}. Set in {[5][LOC]Paris} in {[6][TIME]1957} and often referencing {[7][PER]Shakespeare}'s play {[8][MISC]Pericles}, the title is highly ironic because the characters are immigrants or alienated and do not feel that they belong at all. The story centres on an essentially innocent young university student called {[9][PER]Anne} who through her older brother meets a group of friends haunted by mysterious tensions and fears that lead {[10][NUM]two} of them to commit suicide. Among them is her opposite, a femme fatale called {[11][PER]Terry} who has had affairs with all the men. The source of the malaise affecting the group is never explained, leaving viewers to ponder how far it might be an amalgam of individual imbalances, general existentialist anxiety, or the more specific paranoia of the {[12][MISC]Cold War} as the world faced the possibility of nuclear annihilation.</p>
                                             <blockquote class="blockquote text-right">
-                                            <footer class="blockquote-footer">Wikipedia <cite title="Source Title"><a href="https://en.wikipedia.org/wiki/Inception" style="color: blue;">Inception</a></cite></footer>
                                             </blockquote>
                                             <button type="button" class="btn btn-primary waves-effect waves-light" id="alertify-success-2">click me</button>
                                         </div>
@@ -201,12 +215,9 @@
                                 <div class="col-xl-4 ">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="header-title mt-0  mb-3">Celebrity</h5>
-
-
-                                            <p class="mb-0" id="paragraph_3">姚明（Yao Ming），男，汉族，无党派人士，1980年9月12日出生于上海市徐汇区，祖籍江苏省苏州市吴江区震泽镇，前中国职业篮球运动员，司职中锋，现任亚洲篮球联合会主席、中国篮球协会主席、中职联公司董事长兼总经理，改革先锋奖章获得者。</p>
+                                            <h5 class="header-title mt-0  mb-3">Example3</h5>
+                                            <p class="mb-0" id="paragraph_3">{[0][PER]Leon Crouch}(born {[1][TIME]16 August 1949}) is an {[2][LOC]English} businessman, who was formerly chairman of {[3][ORG]Southampton Football Club}. {[0][PER]Crouch} is the founder and chairman of the "{[4][ORG]Fullers Group}" of companies which specialise in the manufacture, inspection and supply of precision engineered products, including machined components, fabrications, assemblies, kit sets and cold formed products for the telecommunications, medical, oil, defence, space, and marine industries. He was acting chairman of {[3][ORG]Southampton FC}. Until he was removed by the board in {[5][TIME]July 2007}, but was re - appointed in {[5][TIME]December 2007}, following {[6][PER]Michael Wilde} u2019s departure. {[0][PER]Crouch} was again forced to resign his position on {[7][TIME]15 May 2008}, when major shareholders, including {[6][PER]Wilde} and {[8][PER]Rupert Lowe} called an {[9][MISC]EGM} requiring his removal. Whilst chairman of the club, {[0][PER]Crouch} paid personally for the replacement bronze statue of {[10][ORG]Saints} legend {[11][PER]Ted Bates} which is now sited outside {[3][ORG]Southampton}'s {[12][ORG]St Mary's Stadium}.</p>
                                             <blockquote class="blockquote text-right">
-                                            <footer class="blockquote-footer">Baidu Baike <cite title="Source Title"><a href="https://baike.baidu.com/item/%E5%A7%9A%E6%98%8E/28" style="color: blue;">Yao Ming</a></cite></footer>
                                             </blockquote>
                                             <button type="button" class="btn btn-primary waves-effect waves-light" id="alertify-success-3">click me</button>
                                         </div><!--end card-body-->
@@ -220,63 +231,69 @@
                                     <div class="page-title-box">
                                         <div class="btn-group float-right">
                                             <ol class="breadcrumb hide-phone p-0 m-0">
-                                                <li class="breadcrumb-item active">Table</li>
-                                                <li class="breadcrumb-item active">Bar Graph</li>
-                                                <li class="breadcrumb-item active">Dynamic Graph</li>
+                                                <li class="breadcrumb-item active">表格</li>
+                                                <li class="breadcrumb-item active">图</li>
+                                                <li class="breadcrumb-item active">原文</li>
 
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Visualization</h4>
+                                        <h4 class="page-title">可视化界面</h4>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
 
-                            <div class="row" style="display:none;" id="div_visualization">
-                                <div class="col-lg-6">
-                                    <div class="card">
-                                        <div class="card-body">
-
-                                            <h4 class="mt-0 header-title">Relational Triple</h4>
-                                            <p class="text-muted mb-4 font-14 " id="my_table">
-                                                The triplets are expressed in the form of a table.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div> <!-- end col -->
-
-                                <div class="col-lg-6">
-                                    <div class="card">
-                                        <div class="card-body">
-
-                                            <h4 class="mt-0 header-title">Dynamic Graph</h4>
-
-                                            <div id = "div_graph"  style="width: 500px;height:350px;">
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div> <!-- end col -->
-                            </div> <!-- end row -->
-
-                            <!-- <div class="row" id="div_bargraph_whole"> -->
                             <div class="row" style="display:none;" id="div_bargraph_whole">
                                 <div class="col-lg-12">
                                     <div class="card">
+                                        <!-- <div class="card-body" id="div_bargraph"> -->
                                         <div class="card-body">
-                                            <h4 class="mt-0 header-title">Confidence</h4>
+                                            <h4 class="mt-0 header-title">原文本</h4>
                                             <p class="text-muted mb-4 font-14 formular">
-                                                The abscissa represents the category, and the ordinate represents the probability value.
+                                                展示文本为标注后的文本，在此展示去掉标注的文本。
                                             </p>
-                                            <div id="div_bargraph" style="width: 1000px;height:400px;">
+                                            <div id="colored" >
 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row" style="display:none;" id="div_visualization">
+
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+
+                                            <h4 class="mt-0 header-title">三元组</h4>
+                                            <p class="text-muted mb-4 font-14 " id="my_table">
+                                                该表表示了文本所拥有的三元组
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+
+                                <div class="col-lg-6">
+                                    <div class="card" >
+                                        <div class="card-body" >
+
+                                            <h4 class="mt-0 header-title">动态图</h4>
+                                            <p class="text-muted mb-4 font-14 " id="my_table">
+                                                该图展示了各三元组
+                                            </p>
+                                            <div id = "div_graph" style="width: 500px;height:350px;">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+
+                            </div> <!-- end row -->
+
+
+
 
                         </div><!-- container -->
 
@@ -294,6 +311,10 @@
         </div>
         <!-- END wrapper -->
 
+        <!-- 3d-force   -->
+        <script src="assets//js//three.js"></script>
+        <script src="assets//js//three-spritetext.js"></script>
+        <script src="assets//js//3d-force-graph.js"></script>
 
         <!-- jQuery  -->
         <script src="assets//js//jquery.min.js"></script>
@@ -324,7 +345,7 @@
         <script src="assets/plugins/alertify/js/alertify.js"></script>
         <!-- <script src="assets/pages/alertify-init.js"></script> -->
 
-        <script src="assets/js/web2triples.js"></script>
+        <script src="assets/js/re_doc.js"></script>
         <script src="assets/incubator-echarts/dist/echarts.js"></script>
         <script src="https://www.gstatic.com/charts/loader.js"></script>
         <!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script> -->
