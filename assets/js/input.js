@@ -53,7 +53,7 @@
                 // console.log(data);
                 var data_ = JSON.parse(data);
                 // console.log(data_);
-                // $("#colored").after("<div id=inserted_text>" + "关系: " + data_.rel + "<br>" + "置信度: " + data_.confidence_interval+ "</div>");
+                // $("#colored").after("<div id=inserted_text>" + "关系: " + data_.rel + "<br>" + "置信度: " + data_.confidence_interval+ " </div>");
                 var new_table = $("<table class=table table-striped id=myTable></table>");
                 new_table.append('<thead><tr> <th>头实体</th> <th>关系</th> <th>尾实体</th>  </tr></thead>');			
 		// }
