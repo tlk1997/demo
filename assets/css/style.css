@@ -1142,7 +1142,7 @@ code {
 
 .btn-primary {
   /* background-image: linear-gradient(to right ,#e66465, #9198e5); */
-  background-color: #003399;
+  background-color:  #4a1482;
   border: 1px solid transparent;
 }
 
@@ -1391,7 +1391,26 @@ code {
   margin-left: 30px;
   background-color: #ffffff;
 }
-
+.card5{
+  border: none;
+  -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
+  height: 280px;
+  width: 800px;
+  margin-left: 120px;
+  background-color: #ffffff;
+}
+.welcome1{
+  font-size: 38px;
+  color:#666666;
+  font-family: SimSun;
+}
+.welcome2{
+  font-size: 16px;
+  color:#666666;
+  font-family: SimSun;
+}
 .card-primary {
   background-color: #242c6d;
   border-color: #242c6d;
@@ -2503,7 +2522,7 @@ File: Menu
 }
 
 .left .topbar-left {
-  background-color: #003399;
+  background-color:  #4a1482;
   height: 70px;
 }
 
@@ -2512,7 +2531,7 @@ File: Menu
 }
 
 .navbar-custom {
-  background-color: #003399;
+  background-color:  #4a1482;
   border: none;
   margin: -20px -25px 0 -25px;
   -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
