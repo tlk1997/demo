@@ -50,53 +50,71 @@
         </div>
 
         <div class="sidebar-inner niceScrollleft">
-
             <div id="sidebar-menu">
                 <ul>
-                    <li class="menu-title">导航</li>
+                    <li class="menu-title">全监督</li>
                     <li>
-                        <details style="text-indent: 15px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
-                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 16px;">关系抽取</summary>
-                    <li>
-                        <a href="index.html" class="waves-effect">
+                        <a href="ner_st.html" class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
-                            <span> 文档级关系抽取 </span>
+                            <span> 常规实体抽取 </span>
                         </a>
                     </li>
-                    </br>
-                    <li>
-                        <a href="re_st.html" class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 常规关系抽取 </span>
-                        </a>
-                    </li>
-                    </details>
-                    </li>
-                    <li>
-                        <details style="text-indent: 15px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
-                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 16px;">属性抽取</summary>
                     <li>
                         <a href="ae_st.html"  class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
                             <span> 常规属性抽取</span>
                         </a>
                     </li>
-                    </details>
-                    </li>
                     <li>
-                        <details open style="text-indent: 15px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
-                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 16px;">实体抽取</summary>
-                    <li>
-                        <a href="ner_st.html"  class="waves-effect">
+                        <a href="re_st.html"  class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
-                            <span> 常规实体抽取 </span>
+                            <span> 常规关系抽取</span>
                         </a>
                     </li>
+
+                </ul>
+                <ul>
+                    <li class="menu-title">低资源</li>
+                    <li>
+                        <a href="a1.html" class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> 少样本实体抽取 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a2.html" class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> 少样本关系抽取 </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="menu-title">篇章级</li>
+                    <li>
+                        <details open style="line-height:0;text-indent: 15px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
+                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 16px;">关系抽取</summary>
+                    <li>
+                        <details open style="text-indent: 26px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
+                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;">文档级关系抽取</summary>
+
+                    <li>
+                        <a href="welcome.html"  class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> 展示样例</span>
+                        </a>
+                    </li>
+                    <br/>
+                    <li>
+                        <a href="input.html"  class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> 输入样例</span>
+                        </a>
+                    </li>
+                    <br/>
                     </details>
                     </li>
-
-
-
+                    </details>
+                    </li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -222,7 +240,8 @@
         </div> <!-- content -->
 
         <footer class="footer">
-
+            访客数：<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>
+            <br/>
             Copyright© 2019-2021 <a href="http://openkg.cn/">OpenKG</a> All Rights Reserved
 
         </footer>
@@ -262,7 +281,8 @@
 <!-- Alertify js -->
 <script src="assets/plugins/alertify/js/alertify.js"></script>
 <!-- <script src="assets/pages/alertify-init.js"></script> -->
-
+<!-- 引入不蒜子计数 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="assets/js/web2triples.js"></script>
 <script src="assets/incubator-echarts/dist/echarts.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
