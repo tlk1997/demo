@@ -92,7 +92,7 @@
                     <li class="menu-title">篇章级</li>
                     <li>
                         <details open style="text-indent: 26px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
-                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;color: rgb(71, 71, 71);>文档级关系抽取</summary>
+                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;color: rgb(71, 71, 71);">文档级关系抽取</summary>
 
                     <li>
                         <a href="welcome.html"  class="waves-effect">
@@ -181,21 +181,21 @@
 
 
                     <div class="row" id="div_chosen">
-                        <div class="col-xl-4 ">
-                            <div class="card1">
+                        <div class="col-sm-12">
+                            <div class="card">
                                 <div class="card-body active">
                                     <h5 class="header-title mt-0  mb-3">1.DeepKE介绍</h5>
                                     <p class="mb-0" id="paragraph_1">DeepKE 是一个支持低资源、长篇章的知识抽取工具，可以基于pytorch实现命名实体识别、关系抽取和属性抽取功能。</p>
                                     <br/>
                                     <h5 class="header-title mt-0  mb-3">2.DeepKE模型架构</h5>
                                     <p class="mb-0">Deepke的架构图如下所示</p>
-                                    <img src="assets/images/model1.png" alt=""  style="height: 300px;">
+                                    <img src="assets/images/model1.png" alt=""  style="height: auto; width: auto\9; width:100%;">
                                     <p class="mb-0">DeepKE包括了三个模块，可以进行关系抽取、实体命名识别以及属性抽取的任务，在各个模块下包括各自的子模块。其中关系抽取模块就有常规模块、文档级抽取模块以及低资源少样本模块。在每一个子模块中，分为分词、预处理等的一个工具集合，以及编码和训练预测部分。</p>
                                     <br/>
                                     <h5 class="header-title mt-0  mb-3">3.DeepKE快速上手</h5>
                                     <h6>(1)命名实体识别NER</h6>
                                     <p class="mb-0">数据为txt文件，样式范例为：</p>
-                                    <img src="assets/images/tu1.png" alt=""  style="height: 260px;">
+                                    <img src="assets/images/tu1.png" alt=""  style="height: auto; width: auto\9; width:100%;">
                                     <br/>
                                     <p class="mb-0">具体流程请进入详细的README中：</p>
                                     <br/>
@@ -203,7 +203,7 @@
                                     <p class="mb-0"><a href="https://github.com/zjunlp/DeepKE/tree/test_new_deepke/example/ner/few-shot">FEW-SHOT </a> ： 少样本模块使用了LightNER模型，可进入其目录，模型加载和保存位置以及配置可以在shell脚本中修改python run.py训练conll2003,python run.py +train=few_shot直接进行few-shot训练,若要加载模型，修改few_shot.yaml中的load_path,python predict.py即可预测。</p>
                                     <h6>(2)关系抽取RE</h6>
                                     <p class="mb-0">关系抽取是从非结构化的文本中抽取出实体之间的关系，以下为几个样式范例，数据为csv文件：</p>
-                                    <img src="assets/images/tu2.png" alt=""  style="height: 200px;">
+                                    <img src="assets/images/tu2.png" alt=""  style="height: auto; width: auto\9; width:100%;">
                                     <p class="mb-0">具体流程请进入详细的README中，RE包括了以下三个子功能:</p>
                                     <br/>
                                     <p class="mb-0"><a href="https://github.com/zjunlp/deepke/blob/test_new_deepke/example/re/standard">STANDARD</a> ： 常规模块为常用的深度学习模型，有CNN、RNN、Capsule、GCN、Transforemer以及预训练模型，可进入其目录，修改数据集以及conf文件夹下的目录，python run.py即可训练，python predict.py即可预测。</p>
@@ -211,7 +211,7 @@
                                     <p class="mb-0"><a href="https://github.com/zjunlp/deepke/blob/test_new_deepke/example/re/document">DOCUMENT </a> : train_distant.json由于文件太大，请自行从Google Drive上下载到data/目录下.进入其目录，修改数据集以及conf文件夹下的目录，python run.py即可训练，如需从上次训练的模型开始训练：设置.yaml中的train_from_saved_model为上次保存模型的路径，每次训练的日志保存路径默认保存在根目录，可以通过.yaml中的log_dir来配置python predict.py即可预测。</p>
                                     <h6>(3)属性抽取AE</h6>
                                     <p class="mb-0">数据为csv文件，样式范例为：</p>
-                                    <img src="assets/images/tu3.png" alt=""  style="height: 200px;">
+                                    <img src="assets/images/tu3.png" alt=""  style="height: auto; width: auto\9; width:100%;">
                                     <p class="mb-0">具体流程请进入详细的README中:</p>
                                     <br/>
                                     <p class="mb-0"><a href="https://github.com/zjunlp/deepke/blob/test_new_deepke/example/ae/standard">STANDARD</a> ： 常规模块为常用的深度学习模型，有CNN、RNN、Capsule、GCN、Transforemer以及预训练模型，可进入其目录，修改数据集以及conf文件夹下的目录，python run.py即可训练，python predict.py即可预测。</p>
