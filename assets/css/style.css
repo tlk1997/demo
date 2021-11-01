@@ -1142,7 +1142,7 @@ code {
 
 .btn-primary {
   /* background-image: linear-gradient(to right ,#e66465, #9198e5); */
-  background-color:  #4a1482;
+  background-color:#003F88;
   border: 1px solid transparent;
 }
 
@@ -2522,7 +2522,7 @@ File: Menu
 }
 
 .left .topbar-left {
-  background-color:  #4a1482;
+  background-color:  #003F88;
   height: 70px;
 }
 
@@ -2531,7 +2531,7 @@ File: Menu
 }
 
 .navbar-custom {
-  background-color:  #4a1482;
+  background-color:  #003F88;
   border: none;
   margin: -20px -25px 0 -25px;
   -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
@@ -2743,7 +2743,7 @@ body.fixed-left .side-menu.left {
 }
 
 .button-menu-mobile {
-  background-color: #4a1482;
+  background-color: #003F88;
   font-size: 28px;
   color: #ffffff;
   width: 42px;
@@ -3746,16 +3746,19 @@ File: Responsive
     margin-left: 0 !important;
   }
 }
-
+.clearfix{
+  height: 71px;
+}
 .clearfix ul{
   /* 清除ul标签的默认样式 */
   width: auto;/*宽度也改为自动*/
   list-style-type: none;
   white-space:nowrap;
   overflow: hidden;
-  margin-left: 5%;
+  margin-left: 12%;
   /* margin-top: 0;          */
   padding: 0;
+  height: 71px;
 }
 .clearfix li {
   float:left; /* 使li内容横向浮动，即横向排列  */
@@ -3764,7 +3767,7 @@ File: Responsive
   overflow: hidden;
   height: fit-content;
   font-size: 16px;
-  height: 54px;
+  height: 71px;
   padding-top: 16px;
 }
 .clearfix li a{
