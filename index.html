@@ -19,7 +19,7 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/homepage.css" rel="stylesheet" type="text/css">
 
     <link href="assets/plugins/alertify/css/alertify.css" rel="stylesheet" type="text/css">
 
@@ -35,98 +35,28 @@
 <div id="wrapper">
 
     <!-- ========== Left Sidebar Start ========== -->
-    <div class="left side-menu" style="width: 320px;">
-        <button type="button" class="button-menu-mobile button-menu-mobile-topbar open-left waves-effect">
-            <i class="ion-close"></i>
-        </button>
-
-        <!-- LOGO -->
-        <div class="topbar-left">
-            <div class="text-center">
-
-                <a href="https://github.com/zjunlp/deepke" class="logo">
-                    <img src="assets/images/logo_openkg.png" alt="" class="logo-large" style="height: 70px;">
-                </a>
-            </div>
-        </div>
-
-        <div class="sidebar-inner niceScrollleft">
-
-            <div id="sidebar-menu">
-                <ul>
-                    <li class="menu-title">全监督</li>
-                    <li>
-                        <a href="ner_st.html" class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 常规实体抽取 </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="ae_st.html"  class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 常规属性抽取</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="re_st.html"  class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 常规关系抽取</span>
-                        </a>
-                    </li>
-
-                </ul>
-                <ul>
-                    <li class="menu-title">低资源</li>
-                    <li>
-                        <a href="a1.html" class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 少样本实体抽取 </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="a2.html" class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 少样本关系抽取 </span>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="menu-title">篇章级</li>
-                    <li>
-                        <details open style="text-indent: 26px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
-                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;color: rgb(71, 71, 71);">文档级关系抽取</summary>
-
-                    <li>
-                        <a href="welcome.html"  class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 展示样例</span>
-                        </a>
-                    </li>
-                    <br/>
-                    <li>
-                        <a href="input.html"  class="waves-effect">
-                            <i class="mdi mdi-code-not-equal"></i>
-                            <span> 输入样例</span>
-                        </a>
-                    </li>
-                    <br/>
-                    </details>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-         <!-- end sidebarinner -->
-    </div>
+    
 
 
-    <div class="content-page" style="margin-left: 320px">
+    <div class="content-page" style="margin-left: 0px">
         <div class="content">
 
             <!-- Top Bar Start -->
             <div class="topbar">
 
                 <nav class="navbar-custom" style="padding-right: 13px">
+                    
+                    <ul class="list-inline float-left mb-0">
+                        <div class="topbar-left">
+                            <div >
+                                <!--<a href="index.html" class="logo"><i class="mdi mdi-assistant"></i> Zoter</a>-->
+                                <a href="https://github.com/zjunlp/deepke" class="logo">
+                                    <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                    <img src="assets/images/logo_openkg.png" alt="" class="logo-large" style="height: 70px;">
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
 
                     <ul class="list-inline float-right mb-0">
 
@@ -139,18 +69,10 @@
 
                     </ul>
 
-                    <ul class="list-inline menu-left mb-0">
-                        <li class="float-left">
-                            <button class="button-menu-mobile open-left waves-light waves-effect">
-                                <i class="mdi mdi-menu"></i>
-                            </button>
-                        </li>
-                    </ul>
-
                     <div class="clearfix">
                         <ul>
                             <li><a href="index.html">主页</a> </li>
-                            <li><a href="introduction.html">介绍</a> </li>
+                            <li><a href="re_doc_show.html">演示</a> </li>
                             <li><a href="https://github.com/zjunlp/deepke">下载</a> </li>
                             <li><a href="contract_us.html">联系我们</a> </li>
                             <li><a href="https://zjunlp.github.io/DeepKE">文档</a> </li>
@@ -163,108 +85,217 @@
             </div>
             <!-- Top Bar End -->
 
-            <div class="page-content-wrapper ">
+            <div class="page-content-wrapper" style="background-color: white;">
 
                 <div class="container-fluid">
 
-                    <div class="row" id="div_head_websites">
-                        <div class="col-sm-12">
-                            <div class="page-title-box">
-                                <div class="btn-group float-right">
-                                    <ol class="breadcrumb hide-phone p-0 m-0">
-
-                                    </ol>
-                                </div>
-                                <h4 class="page-title"></h4>
-                            </div>
+                    <div class="jumbotron jumbotron-fluid back" >
+                        <div class="row header p-6 m-5">
+                          <div class="p-1 mx-auto text-center text-dark col-md-9 col-sm-12">
+                            <h3>
+                              <b>Deep Learning Based Knowledge Extraction Toolkit for Knowledge Base Population</b><br>
+                            </h3>
+                          </div>
                         </div>
-                        <div class="clearfix">
-
-                        </div>
+                      
                     </div>
 
+                    <div class="row" style="background-color: white;" >  
+                        <div class="col-sm-12 p-1 mx-auto">
+                            <div class="page-title-box">
+                                <h4 style="padding-top:5px; padding-left:17%; ">
+                                    <b >Architecture</b>
+                                </h4>
+                            </div>
+                        </div>                      
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
 
-                    <div class="row" id="div_chosen">
-                        <div class="col-sm-12">
+                        <div class=" col-md-4 p-1 mx-auto text-center" >
                             <div class="card">
                                 <div class="card-body active">
-                                    <br/>
-                                    <br/>
-                                    <h5 class="welcome1" style="text-align: center;">欢迎访问DeepKE</h5>
-                                    <br/>
-                                    <p class="welcome2" style="text-align: center;">DeepKE是一个支持低资源、长篇章的知识抽取工具，具备命名实体识别、关系抽取和属性抽取等功能。</p>
-                                    <br/>
+                                   
+                                    <div style="width: 100%; margin: auto; ">
+                                        <img class="logo" src="assets/images/logo.png" alt="user" style="width: 100%;height: auto;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class=" col-md-4 p-1 mx-auto text-center">
+                            <div class="card " >
+                                <div class="card-body active">
+                                   
+                                    <div style="width: 100%; margin: auto; ">
+                                        <img class="logo" src="assets/images/architectures.png" alt="user" style="width: 100%;height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
 
-
-
-
-                    </div> <!-- end row -->
-
-                    <div class="row" id="div_head_visualization"  style="display:none;">
-                        <div class="col-sm-12">
+                        
+                        
+                        <div class="col-sm-12 p-1 mx-auto">
                             <div class="page-title-box">
-                                <div class="btn-group float-right">
-                                    <ol class="breadcrumb hide-phone p-0 m-0">
-                                        <li class="breadcrumb-item active">Table</li>
-                                        <li class="breadcrumb-item active">Bar Graph</li>
-                                        <li class="breadcrumb-item active">Dynamic Graph</li>
-
-                                    </ol>
-                                </div>
-                                <h4 class="page-title">Visualization</h4>
+                                <h4 style="padding-top:5px; padding-left:17%; ">
+                                    <b >Features</b>
+                                </h4>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="row" style="display:none;" id="div_visualization">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <h4 class="mt-0 header-title">Relational Triple</h4>
-                                    <p class="text-muted mb-4 font-14 " id="my_table">
-                                        The triplets are expressed in the form of a table.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div> <!-- end col -->
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <h4 class="mt-0 header-title">Dynamic Graph</h4>
-
-                                    <div id = "div_graph"  style="width: 500px;height:350px;">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                    <!-- <div class="row" id="div_bargraph_whole"> -->
-                    <div class="row" style="display:none;" id="div_bargraph_whole">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="mt-0 header-title">Confidence</h4>
-                                    <p class="text-muted mb-4 font-14 formular">
-                                        The abscissa represents the category, and the ordinate represents the probability value.
-                                    </p>
-                                    <div id="div_bargraph" style="width: 1000px;height:400px;">
-
-                                    </div>
+                        
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead"  >
+                            <div class="pp-card m-3 bg-light" >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Multiple extraction tasks</span>
+                                    <br>
+                                    <h7>DeepKE contains three modules for named entity recognition, relation extraction and attribute extraction, the three tasks respectively.</h7> 
                                 </div>
                             </div>
                         </div>
+                                
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light" >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Multiple scene settings</span>
+                                    <br>
+                                    <h7>Each module has its own submodules. For example, there are standard, document-level and few-shot submodules in the attribute extraction modular.<h7>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light">
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Multiple usage modes</span>
+                                    <br>
+                                    <h7>You can use directly by pip, and you can also modify the code to use by 'python setup.py instll'.</h7>
+                                </div>              
+                            </div>
+                        </div>
+                            
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light" >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Online demo</span>
+                                    <br>
+                                    <h7>Try to use the model directly!!!</h7>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+
+                        <div class="col-sm-12 p-1 mx-auto">
+                            <div class="page-title-box">
+                                <h4 style="padding-top:5px; padding-left:17%">
+                                    <b>Examples</b>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light " >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Standard NER</span>
+                                    <a href="https://zjunlp.github.io/DeepKE/example.html#standard-ner" class="logo">
+                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                        <img src="assets/images/standard NER.png" style="width:100%; margin: auto;">
+                                    </a>
+
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                                
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light" >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Few-shot NER</span>
+                                    <a href="https://zjunlp.github.io/DeepKE/example.html#few-shot-ner" class="logo">
+                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                        <img src="assets/images/Few-shot NER.png" style="width:100%; margin: auto;">
+                                    </a>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light">
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Standard RE</span>
+                                    <a href="https://zjunlp.github.io/DeepKE/example.html#standard-re" class="logo">
+                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                        <img src="assets/images/standard RE.png" style="width:100%; margin: auto;">
+                                    </a>
+                                    <br>
+                                </div>              
+                            </div>
+                        </div>
+                            
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light" >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Few-shot RE</span>
+                                    <a href="https://zjunlp.github.io/DeepKE/example.html#few-shot-re" class="logo">
+                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                        <img src="assets/images/Few-shot RE.png" style="width:100%; margin: auto;">
+                                    </a>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light">
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Document RE</span>
+                                    <a href="https://zjunlp.github.io/DeepKE/example.html#document-re" class="logo">
+                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                        <img src="assets/images/Document-level RE.png" style="width:100%; margin: auto;">
+                                    </a>
+
+                                    <br>
+                                </div>              
+                            </div>
+                        </div>
+                            
+                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
+                            <div class="pp-card m-3 bg-light" >
+                                <div class="card-header-large" style="background-color: white;">
+                                    <span style="font-weight:bold;">Standard AE</span>
+                                    <a href="https://zjunlp.github.io/DeepKE/example.html#standard-ae" class="logo">
+                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
+                                        <img src="assets/images/AE.png" style="width:100%; margin: auto;">
+                                    </a>
+
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 p-1 mx-auto text-center" >
+                        </div>
+
+
                     </div>
+                     <!-- end row -->
 
                 </div><!-- container -->
 
@@ -272,7 +303,7 @@
 
         </div> <!-- content -->
 
-        <footer class="footer">
+        <footer class="footer" >
             访客数：<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>
             <br/>
             Copyright© 2019-2021 <a href="http://openkg.cn/">OpenKG</a> All Rights Reserved
