@@ -81,13 +81,13 @@
                 <ul>
                     <li class="menu-title">低资源</li>
                     <li>
-                        <a href="a1.html" class="waves-effect">
+                        <a href="ner_few.html" class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
                             <span> 少样本实体抽取 </span>
                         </a>
                     </li>
                     <li>
-                        <a href="a2.html" class="waves-effect">
+                        <a href="re_few.html" class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
                             <span> 少样本关系抽取 </span>
                         </a>
@@ -100,14 +100,14 @@
                             <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;color: rgb(71, 71, 71);">文档级关系抽取</summary>
 
                     <li>
-                        <a href="welcome.html"  class="waves-effect">
+                        <a href="re_doc_show.html"  class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
                             <span> 展示样例</span>
                         </a>
                     </li>
                     <br/>
                     <li>
-                        <a href="input.html"  class="waves-effect">
+                        <a href="re_doc_input.html"  class="waves-effect">
                             <i class="mdi mdi-code-not-equal"></i>
                             <span> 输入样例</span>
                         </a>
@@ -157,7 +157,7 @@
                             <li><a href="index.html">DeepKE</a> </li>
                             <li><a href="introduction.html">介绍</a> </li>
                             <li><a href="https://github.com/zjunlp/deepke">下载</a> </li>
-                            <li><a href="connection.html">联系我们</a> </li>
+                            <li><a href="contract_us.html">联系我们</a> </li>
                             <li><a href="http://openkg.cn/">OpenKG</a></li>
                         </ul>
                     </div>
@@ -176,10 +176,12 @@
                             <div class="page-title-box">
                                 <div class="btn-group float-right">
                                     <ol class="breadcrumb hide-phone p-0 m-0">
-
+                                        <!-- <li class="breadcrumb-item"><a href="#">Zoter</a></li> -->
+                                        <!-- <li class="breadcrumb-item"><a href="#">Forms</a></li> -->
+                                        <!-- <li class="breadcrumb-item active">Advanced</li> -->
                                     </ol>
                                 </div>
-                                <h4 class="page-title"></h4>
+                                <h4 class="page-title">&nbsp;&nbsp;少样本实体抽取</h4>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -189,21 +191,19 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-
-
                                     <p class="text-muted mb-4 font-14">
-                                        输入文本,文本格式如展示样例，其中实体格式为{[实体编号（同一个实体同一个编号）][实体类型]实体名称}
+                                        选择或输入文本
                                     </p>
 
                                     <select class="select2 form-control custom-select" id="select_id">
                                         <option value="example">选择样例</option>
-                                        <option>The {[0][LOC]Canton Memorial Civic Center} is a multi - purpose arena located in {[1][LOC]Canton}, {[2][LOC]Ohio}, {[3][LOC]United States}, and is currently the home arena for the {[4][ORG]Canton Charge} of the {[5][ORG]NBA G League}. Built in {[6][TIME]1951}, previous sports teams that have played at the center include the {[7][ORG]Canton Legends} indoor football team, {[8][ORG]Canton Invaders} indoor soccer team, and {[9][ORG]Ohio Aviators} of the {[10][ORG]American Basketball Association}. The building is owned by the {[1][LOC]City of Canton} and operated by {[11][ORG]SMG}. Capacity is {[12][NUM]5,200} in the arena, and up to {[13][NUM]600} in the {[14][LOC]McKinley Room}. The facility has over the years hosted concerts, professional wrestling cards, political rallies, family shows, and features a number of annual {[15][MISC]Pro Football Hall of Fame} festival events.</option>
-                                        <option value="A">{[0][MISC]Paris Belongs to Us}(sometimes translated as {[1][MISC]Paris Is Ours})is a {[2][TIME]1961} {[3][LOC]French} mystery film directed by {[4][PER]Jacques Rivette}. Set in {[5][LOC]Paris} in{[6][TIME]1957} and often referencing {[7][PER]Shakespeare}'s play {[8][MISC]Pericles}, the title is highly ironic because the characters are immigrants or alienated and do not feel that they belong at all. The story centres on an essentially innocent young university student called {[9][PER]Anne} who through her older brother meets a group of friends haunted by mysterious tensions and fears that lead {[10][NUM]two} of them to commit suicide. Among them is her opposite, a femme fatale called {[11][PER]Terry} who has had affairs with all the men. The source of the malaise affecting the group is never explained, leaving viewers to ponder how far it might be an amalgam of individual imbalances, general existentialist anxiety, or the more specific paranoia of the {[12][MISC]Cold War} as the world faced the possibility of nuclear annihilation.</option>
-                                        <option value="B">{[0][MISC]The Great Appeal}({[1][MISC]Italian}: {[0][MISC]Il Grande appello}) is a {[2][TIME]1936} {[3][LOC]Italian} war film directed by {[4][PER]Mario Camerini} and starring {[5][PER]Camillo Pilotto}, {[6][PER]Roberto Villa} and {[7][PER]Lina d'Acosta}. It is sometimes known by the alternative title {[0][MISC]The Last Roll-Call}. {[4][PER]Camerini} was considered to have no sympathies with the {[8][ORG]Fascist} regime of {[9][LOC]Italy}, but he made this propaganda film that endorsed the colonial policies of the {[3][LOC]Italian} government. It was one of a number of {[10][LOC]African}-set films made during the {[8][ORG]Fascist} era including {[11][MISC]The White Squadron}({[2][TIME]1936}), {[12][MISC]Sentinels of Bronze}({[13][TIME]1937}) and {[14][MISC]Luciano Serra, Pilot}({[15][TIME]1938}). The film portrays the rediscovery of his patriotism of an {[3][LOC]Italian}, who eventually dies for his country.</option>
+                                        <option>本报北京9月4日讯记者杨涌报道：部分省区人民日报宣传发行工作座谈会9月3日在4日在京举行。	</option>
+                                        <option value="A">《红楼梦》是中央电视台和中国电视剧制作中心根据中国古典文学名著《红楼梦》摄制于1987年的一部古装连续剧，由王扶林导演，周汝昌、王蒙、周岭等多位红学家参与制作。</option>
+                                        <option value="B">秦始皇兵马俑位于陕西省西安市，1961年被国务院公布为第一批全国重点文物保护单位，是世界八大奇迹之一。</option>
                                     </select>
 
                                     <h6 class="my-3 sub-title">文本</h6>
-                                    <textarea id="textarea" class="form-control" maxlength="10000" rows="5" value="Mark"></textarea>
+                                    <textarea id="textarea" class="form-control" maxlength="225" rows="2" value="Mark"></textarea>
 
                                     <div class="m-t-20" align="center">
                                         <button type="button" class="btn btn-primary waves-effect waves-light" id="text-confirm">click me</button>
@@ -219,7 +219,11 @@
                             <div class="page-title-box">
                                 <div class="btn-group float-right">
                                     <ol class="breadcrumb hide-phone p-0 m-0">
-
+                                        <!-- <li class="breadcrumb-item"><a href="#">Zoter</a></li> -->
+                                        <!-- <li class="breadcrumb-item active">Table</li> -->
+                                        <!-- <li class="breadcrumb-item active">Bar Graph</li> -->
+                                        <!-- <li class="breadcrumb-item active">Dynamic Graph</li> -->
+                                        <!-- <li class="breadcrumb-item active">Dashboard</li> -->
 
                                     </ol>
                                 </div>
@@ -234,10 +238,9 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="mt-0 header-title">三元组</h4>
-                                    <p class="text-muted mb-4 font-14 " id="my_table">
-                                        该表表示了文本所拥有的三元组
-                                    </p>
+                                    <!-- <div id="colored"> -->
+                                    <h4 class="mt-0 header-title" id="colored">结果</h4>
+
                                 </div>
                             </div>
                         </div> <!-- end col -->
@@ -296,11 +299,11 @@
 <!-- App js -->
 <script src="assets/js/app.js"></script>
 
-<script src="assets/js/input.js"></script>
 
 <script src="assets/plugins/alertify/js/alertify.js"></script>
 
 <script src="assets/incubator-echarts/dist/echarts.js"></script>
+<script src="assets/js/re_few.js"></script>
 
 </body>
 </html>
