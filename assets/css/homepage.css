@@ -533,7 +533,9 @@ code {
 .text-light {
   color: #eff3f6 !important;
 }
-
+.text-zju {
+  color:rgb(0,63,136) !important
+}
 .badge {
   font-weight: 500;
 }
