@@ -1362,7 +1362,7 @@ code {
   /* -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05); */
   /* margin-bottom: 30px; */
-  height: 400px;
+  height: auto;
   background-color: transparent
 }
 .card1 {
