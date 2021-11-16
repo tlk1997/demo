@@ -57,7 +57,7 @@
                     result = result + item + ": " + data_[item] + "<br>"
                     // $("#colored").after(item + ": " + data_[item] + "<br>")
                 }
-                $("#colored").after("<div id=inserted_text>" + "文本: "+ text + "<br>" + result );
+                $("#colored").after("<div id=inserted_text>" + "<br>" + result );
             });
 
 

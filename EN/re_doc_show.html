@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>DeepKE</title>
+    <meta content="DeepKE" name="description" />
+    <meta content="ZJU-KLab" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="assets/images/zj.png">
+
+    <!-- jvectormap -->
+    <link href="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+    <link href="../assets/plugins/fullcalendar/vanillaCalendar.css" rel="stylesheet" type="text/css"  />
+
+    <link href="../assets/plugins/morris/morris.css" rel="stylesheet">
+
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="../assets/plugins/alertify/css/alertify.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body class="fixed-left">
+
+<!-- Loader -->
+<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left side-menu" style="width: 320px;">
+        <button type="button" class="button-menu-mobile button-menu-mobile-topbar open-left waves-effect">
+            <i class="ion-close"></i>
+        </button>
+
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <div class="text-center">
+
+                <a href="https://github.com/zjunlp/deepke" class="logo">
+                    <img src="../assets/images/logo_openkg.png" alt="" class="logo-large" style="height: 70px;">
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-inner niceScrollleft">
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="menu-title"> Fully Supervised </li>
+                    <li>
+                        <a href="ner_st.html" class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Standard Named Entity Recognition </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ae_st.html"  class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Standard Attribution Extraction </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="re_st.html"  class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Standard Relation Extraction </span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li class="menu-title"> Low Resource </li>
+                    <li>
+                        <a href="ner_few.html" class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Few-shot Named Entity Recognition </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="re_few.html" class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Few-shot Relation Extraction </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="menu-title"> Document </li>
+                    <li>
+                        <details open style="text-indent: 26px;cursor: pointer;-webkit-tap-highlight-color: transparent;">
+                            <summary style="padding: 15px 20px;letter-spacing: .035em;cursor: default;font-size: 15px;color: rgb(71, 71, 71);"> Document Relation Extraction</summary>
+
+                    <li>
+                        <a href="re_doc_show.html"  class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Example </span>
+                        </a>
+                    </li>
+                    <br/>
+                    <li>
+                        <a href="re_doc_input.html"  class="waves-effect">
+                            <i class="mdi mdi-code-not-equal"></i>
+                            <span> Input </span>
+                        </a>
+                    </li>
+                    <br/>
+                    </details>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>  <!-- end sidebarinner -->
+    </div>
+
+
+    <div class="content-page" style="margin-left: 320px">
+        <div class="content">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <nav class="navbar-custom" style="padding-right: 13px">
+
+                    <ul class="list-inline float-right mb-0">
+
+                        <li class="list-inline-item dropdown notification-list" style="padding: 10px;">
+                            <a href="https://azft.alibaba.com/lab/?id=7" role="button >
+                                       aria-haspopup="false" aria-expanded="false"  >
+                            <img src="../assets/images/zjus.jpeg" alt="user" class="rounded-circle" style="height: 50px;width: auto;">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline float-right mb-0">
+
+                        <li class="list-inline-item dropdown notification-list" style="padding: 15px;">
+                            
+                            <button class="button2">English</button>
+                            <a href="../CN/re_doc_input.html">
+                                <button class="button2" ">中文</button>
+                            </a>
+                            
+                        </li>
+
+                    </ul>
+
+                    <div class="clearfix">
+                        <ul>
+                            <li><a href="index.html">Homepage</a> </li>
+                            <li><a href="re_doc_show.html">Demo</a> </li>
+                            <li><a href="https://github.com/zjunlp/deepke">Download</a> </li>
+                            <li><a href="contract_us.html">Contract Us</a> </li>
+                            <li><a href="https://zjunlp.github.io/DeepKE">Doc</a> </li>
+                            <li><a href="http://openkg.cn/">OpenKG</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+            <div class="page-content-wrapper ">
+
+                <div class="container-fluid">
+
+                    <div class="row" id="div_head_websites">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="btn-group float-right">
+                                    <ol class="breadcrumb hide-phone p-0 m-0">
+
+                                    </ol>
+                                </div>
+                                <h4 class="page-title"></h4>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+
+                        </div>
+                    </div>
+
+
+                    <div class="row" id="div_chosen">
+                        <div class="col-xl-4 ">
+                            <div class="card">
+                                <div class="card-body active">
+                                    <h5 class="header-title mt-0  mb-3">Example1</h5>
+                                    <p class="mb-0" id="paragraph_1">The <strong>{[0][LOC]Canton Memorial Civic Center}</strong> is a multi - purpose arena located in <strong>{[1][LOC]Canton}</strong>, <strong>{[2][LOC]Ohio}</strong>, <strong>{[3][LOC]United States}</strong>, and is currently the home arena for the <font color='#330066'>{[4][ORG]Canton Charge}</font> of the <font color='#330066'>{[5][ORG]NBA G League}</font>. Built in <font color='#000099'>{[6][TIME]1951}</font>, previous sports teams that have played at the center include the <font color='#330066'>{[7][ORG]Canton Legends}</font> indoor football team, <font color='#330066'>{[8][ORG]Canton Invaders}</font> indoor soccer team, and <font color='#330066'>{[9][ORG]Ohio Aviators}</font> of the <font color='#330066'>{[10][ORG]American Basketball Association}</font>. The building is owned by the <strong>{[1][LOC]City of Canton}</strong> and operated by <font color='#330066'>{[11][ORG]SMG}</font>. Capacity is <font color='#0000cc'>{[12][NUM]5,200}</font> in the arena, and up to <font color='#0000cc'>{[13][NUM]600}</font> in the <strong>{[14][LOC]McKinley Room}</strong>. The facility has over the years hosted concerts, professional wrestling cards, political rallies, family shows, and features a number of annual <font color='#0000ff'>{[15][MISC]Pro Football Hall of Fame}</font> festival events.</p>
+                                    <blockquote class="blockquote text-right">
+                                    </blockquote>
+                                    <button type="button" class="btn btn-primary waves-effect waves-light" id="alertify-success-1">Click</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-4 ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="header-title mt-0  mb-3">Example2</h5>
+                                    <p class="mb-0" id="paragraph_2"><font color='#0000ff'>{[0][MISC]Paris Belongs to Us}</font>(sometimes translated as <font color='#0000ff'>{[1][MISC]Paris Is Ours}</font>)is a <font color='#000099'>{[2][TIME]1961}</font> <strong>{[3][LOC]French}</strong> mystery film directed by <font color='#3366cc'>{[4][PER]Jacques Rivette}</font>. Set in <strong>{[5][LOC]Paris}</strong> in<font color='#000099'>{[6][TIME]1957}</font> and often referencing <font color='#3366cc'>{[7][PER]Shakespeare}</font>'s play <font color='#0000ff'>{[8][MISC]Pericles}</font>, the title is highly ironic because the characters are immigrants or alienated and do not feel that they belong at all. The story centres on an essentially innocent young university student called <font color='#3366cc'>{[9][PER]Anne}</font> who through her older brother meets a group of friends haunted by mysterious tensions and fears that lead <font color='#0000cc'>{[10][NUM]two}</font> of them to commit suicide. Among them is her opposite, a femme fatale called <font color='#3366cc'>{[11][PER]Terry}</font> who has had affairs with all the men. The source of the malaise affecting the group is never explained, leaving viewers to ponder how far it might be an amalgam of individual imbalances, general existentialist anxiety, or the more specific paranoia of the <font color='#0000ff'>{[12][MISC]Cold War}</font> as the world faced the possibility of nuclear annihilation.</p>
+                                    <blockquote class="blockquote text-right">
+                                    </blockquote>
+                                    <button type="button" class="btn btn-primary waves-effect waves-light" id="alertify-success-2">Click</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="header-title mt-0  mb-3">Example3</h5>
+                                    <p class="mb-0" id="paragraph_3"><font color="#0000ff">{[0][MISC]The Great Appeal}</font>(<font color="#0000ff">{[1][MISC]Italian}</font>: <font color="#0000ff">{[0][MISC]Il Grande appello}</font>) is a <font color="#000099">{[2][TIME]1936}</font> <strong>{[3][LOC]Italian}</strong> war film directed by <font color="#3366cc"> {[4][PER]Mario Camerini}</font> and starring <font color="#3366cc"> {[5][PER]Camillo Pilotto}</font>, <font color="#3366cc">{[6][PER]Roberto Villa}</font> and <font color="#3366cc">{[7][PER]Lina d'Acosta}</font>. It is sometimes known by the alternative title <font color="#0000ff"> {[0][MISC]The Last Roll-Call}</font>. <font color="#3366cc">{[4][PER]Camerini}</font> was considered to have no sympathies with the <font color="#000066"> {[8][ORG]Fascist}</font> regime of <strong>{[9][LOC]Italy}</strong>, but he made this propaganda film that endorsed the colonial policies of the <strong>{[3][LOC]Italian}</strong> government. It was one of a number of <strong>{[10][LOC]African}</strong>-set films made during the <font color="#000066"> {[8][ORG]Fascist}</font> era including <font color="#0000ff"> {[11][MISC]The White Squadron}</font>(<font color="#000099"> {[2][TIME]1936}</font>), <font color="#0000ff"> {[12][MISC]Sentinels of Bronze}</font>(<font color="#000099" >{[13][TIME]1937}</font>) and <font color="#0000ff"> {[14][MISC]Luciano Serra, Pilot}</font>(<font color="#000099"> {[15][TIME]1938}</font>). The film portrays the rediscovery of his patriotism of an <strong>{[3][LOC]Italian}</strong>, who eventually dies for his country.</p>
+                                    <blockquote class="blockquote text-right">
+                                    </blockquote>
+                                    <button type="button" class="btn btn-primary waves-effect waves-light" id="alertify-success-3">Click</button>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+
+                    </div> <!-- end row -->
+
+                    <div class="row" id="div_head_visualization"  style="display:none;">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="btn-group float-right">
+                                    <ol class="breadcrumb hide-phone p-0 m-0">
+                                        <li class="breadcrumb-item active">Table</li>
+                                        <li class="breadcrumb-item active">Graph</li>
+                                        <li class="breadcrumb-item active">Origin Text</li>
+
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">&nbsp;&nbsp;Visual interface</h4>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="row" style="display:none;" id="div_bargraph_whole">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <!-- <div class="card-body" id="div_bargraph"> -->
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Origin Text</h4>
+                                    <p class="text-muted mb-4 font-14 formular">
+                                        The displayed text is the marked text, and the marked text is displayed here.
+                                    </p>
+                                    <div id="colored" >
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display:none;" id="div_visualization">
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h4 class="mt-0 header-title"> Triplets </h4>
+                                    <p class="text-muted mb-4 font-14 " id="my_table">
+                                        This table represents the triples owned by the text
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+                        <div class="col-lg-6">
+                            <div class="card" >
+                                <div class="card-body" >
+
+                                    <h4 class="mt-0 header-title">Dynamic Picture</h4>
+                                    <p class="text-muted mb-4 font-14 " id="my_table">
+                                        The figure shows triplets
+                                    </p>
+                                    <div id = "div_graph" style="width: 500px;height:350px;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+                    </div> <!-- end row -->
+
+
+
+
+                </div><!-- container -->
+
+            </div> <!-- Page content Wrapper -->
+
+        </div> <!-- content -->
+
+        <footer class="footer">
+            Visitors' number: <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>
+            <br/>
+            Copyright© 2019-2021 <a href="http://openkg.cn/">OpenKG</a> All Rights Reserved
+        </footer>
+
+    </div>
+    <!-- End Right content here -->
+
+</div>
+<!-- END wrapper -->
+
+<!-- 3d-force   -->
+<script src="../assets//js//three.js"></script>
+<script src="../assets//js//three-spritetext.js"></script>
+<script src="../assets//js//3d-force-graph.js"></script>
+
+<!-- jQuery  -->
+<script src="../assets//js//jquery.min.js"></script>
+<script src="../assets//js//popper.min.js"></script>
+<script src="../assets//js//bootstrap.min.js"></script>
+<script src="../assets//js//modernizr.min.js"></script>
+<script src="../assets//js//detect.js"></script>
+<script src="../assets//js//fastclick.js"></script>
+<script src="../assets//js//jquery.blockUI.js"></script>
+<script src="../assets//js//waves.js"></script>
+<script src="../assets//js//jquery.nicescroll.js"></script>
+
+<script src="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="../assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+<script src="../assets/plugins/skycons/skycons.min.js"></script>
+<script src="../assets/plugins/fullcalendar/vanillaCalendar.js"></script>
+
+<script src="../assets/plugins/raphael/raphael-min.js"></script>
+<script src="../assets/plugins/morris/morris.min.js"></script>
+
+<script src="../assets/pages/dashborad.js"></script>
+
+<!-- App js -->
+<script src="../assets/js/app.js"></script>
+
+<!-- Alertify js -->
+<script src="../assets/plugins/alertify/js/alertify.js"></script>
+<!-- <script src="assets/pages/alertify-init.js"></script> -->
+<!-- 引入不蒜子计数 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="../assets/js/re_doc.js"></script>
+<script src="../assets/incubator-echarts/dist/echarts.js"></script>
+<script src="../https://www.gstatic.com/charts/loader.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script> -->
+
+</body>
+</html>

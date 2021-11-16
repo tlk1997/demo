@@ -3797,4 +3797,16 @@ File: Responsive
   font-family: "Lato", sans-serif;
   /* background-color: rgba(236, 241, 246, 1); */
 }
+
+.button2 {
+  /* background-color: rgba(255, 255, 255, 0.4);   */
+  background-color: transparent;
+  border-color: transparent;  
+  color: rgb(255,255,255);  
+  border-radius: 2px;  
+  border: 0px solid white;
+  font-size: 120%; 
+  width:auto;
+  height:30px; 
+}
 /*# sourceMappingURL=style.css.map */

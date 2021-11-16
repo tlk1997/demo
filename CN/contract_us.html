@@ -9,19 +9,19 @@
     <meta content="ZJU-KLab" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="assets/images/zj.png">
+    <link rel="shortcut icon" href="../assets/images/zj.png">
 
     <!-- jvectormap -->
-    <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
-    <link href="assets/plugins/fullcalendar/vanillaCalendar.css" rel="stylesheet" type="text/css"  />
+    <link href="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+    <link href="../assets/plugins/fullcalendar/vanillaCalendar.css" rel="stylesheet" type="text/css"  />
 
-    <link href="assets/plugins/morris/morris.css" rel="stylesheet">
+    <link href="../assets/plugins/morris/morris.css" rel="stylesheet">
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 
-    <link href="assets/plugins/alertify/css/alertify.css" rel="stylesheet" type="text/css">
+    <link href="../assets/plugins/alertify/css/alertify.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -45,7 +45,7 @@
             <div class="text-center">
 
                 <a href="https://github.com/zjunlp/deepke" class="logo">
-                    <img src="assets/images/logo_openkg.png" alt="" class="logo-large" style="height: 70px;">
+                    <img src="../assets/images/logo_openkg.png" alt="" class="logo-large" style="height: 70px;">
                 </a>
             </div>
         </div>
@@ -131,18 +131,22 @@
                         <li class="list-inline-item dropdown notification-list" style="padding: 10px;">
                             <a href="https://azft.alibaba.com/lab/?id=7" role="button >
                                        aria-haspopup="false" aria-expanded="false">
-                            <img src="assets/images/zjus.jpeg" alt="user" class="rounded-circle" style="height: 50px;width: auto;">
+                            <img src="../assets/images/zjus.jpeg" alt="user" class="rounded-circle" style="height: 50px;width: auto;">
                             </a>
                         </li>
 
                     </ul>
 
-                    <ul class="list-inline menu-left mb-0">
-                        <li class="float-left">
-                            <button class="button-menu-mobile open-left waves-light waves-effect">
-                                <i class="mdi mdi-menu"></i>
-                            </button>
+                    <ul class="list-inline float-right mb-0">
+
+                        <li class="list-inline-item dropdown notification-list" style="padding: 15px;">
+                            
+                            <a href="../EN/contract_us.html">
+                                <button class="button2">English</button>
+                            </a>
+                            <button class="button2">中文</button>
                         </li>
+
                     </ul>
 
                     <div class="clearfix">
@@ -197,74 +201,9 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div> <!-- end row -->
 
-                    <div class="row" id="div_head_visualization"  style="display:none;">
-                        <div class="col-sm-12">
-                            <div class="page-title-box">
-                                <div class="btn-group float-right">
-                                    <ol class="breadcrumb hide-phone p-0 m-0">
-                                        <li class="breadcrumb-item active">Table</li>
-                                        <li class="breadcrumb-item active">Bar Graph</li>
-                                        <li class="breadcrumb-item active">Dynamic Graph</li>
-
-                                    </ol>
-                                </div>
-                                <h4 class="page-title">Visualization</h4>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="row" style="display:none;" id="div_visualization">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <h4 class="mt-0 header-title">Relational Triple</h4>
-                                    <p class="text-muted mb-4 font-14 " id="my_table">
-                                        The triplets are expressed in the form of a table.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div> <!-- end col -->
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    <h4 class="mt-0 header-title">Dynamic Graph</h4>
-
-                                    <div id = "div_graph"  style="width: 500px;height:350px;">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                    <!-- <div class="row" id="div_bargraph_whole"> -->
-                    <div class="row" style="display:none;" id="div_bargraph_whole">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="mt-0 header-title">Confidence</h4>
-                                    <p class="text-muted mb-4 font-14 formular">
-                                        The abscissa represents the category, and the ordinate represents the probability value.
-                                    </p>
-                                    <div id="div_bargraph" style="width: 1000px;height:400px;">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div><!-- container -->
 
@@ -287,38 +226,38 @@
 
 
 <!-- jQuery  -->
-<script src="assets//js//jquery.min.js"></script>
-<script src="assets//js//popper.min.js"></script>
-<script src="assets//js//bootstrap.min.js"></script>
-<script src="assets//js//modernizr.min.js"></script>
-<script src="assets//js//detect.js"></script>
-<script src="assets//js//fastclick.js"></script>
-<script src="assets//js//jquery.blockUI.js"></script>
-<script src="assets//js//waves.js"></script>
-<script src="assets//js//jquery.nicescroll.js"></script>
+<script src="../assets//js//jquery.min.js"></script>
+<script src="../assets//js//popper.min.js"></script>
+<script src="../assets//js//bootstrap.min.js"></script>
+<script src="../assets//js//modernizr.min.js"></script>
+<script src="../assets//js//detect.js"></script>
+<script src="../assets//js//fastclick.js"></script>
+<script src="../assets//js//jquery.blockUI.js"></script>
+<script src="../assets//js//waves.js"></script>
+<script src="../assets//js//jquery.nicescroll.js"></script>
 <!-- 引入不蒜子计数 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-<script src="assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="../assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 
-<script src="assets/plugins/skycons/skycons.min.js"></script>
-<script src="assets/plugins/fullcalendar/vanillaCalendar.js"></script>
+<script src="../assets/plugins/skycons/skycons.min.js"></script>
+<script src="../assets/plugins/fullcalendar/vanillaCalendar.js"></script>
 
-<script src="assets/plugins/raphael/raphael-min.js"></script>
-<script src="assets/plugins/morris/morris.min.js"></script>
+<script src="../assets/plugins/raphael/raphael-min.js"></script>
+<script src="../assets/plugins/morris/morris.min.js"></script>
 
-<script src="assets/pages/dashborad.js"></script>
+<script src="../assets/pages/dashborad.js"></script>
 
 <!-- App js -->
-<script src="assets/js/app.js"></script>
+<script src="../assets/js/app.js"></script>
 
 <!-- Alertify js -->
-<script src="assets/plugins/alertify/js/alertify.js"></script>
+<script src="../assets/plugins/alertify/js/alertify.js"></script>
 <!-- <script src="assets/pages/alertify-init.js"></script> -->
-
+<!-- 
 <script src="assets/js/web2triples.js"></script>
 <script src="assets/incubator-echarts/dist/echarts.js"></script>
-<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script> -->
 <!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script> -->
 
 </body>
