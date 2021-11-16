@@ -40,7 +40,7 @@
 
             $("#inserted_text").remove();
 
-            var request_url = "http://120.27.214.45:8886/test?q=" + text;
+            var request_url = "http://120.27.214.45:8885/test?q=" + text;
 
             // if(is_finished == false){
 
