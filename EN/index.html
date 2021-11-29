@@ -1,18 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DeepKE</title>
     <meta content="DeepKE" name="description" />
     <meta content="ZJU-KLab" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="assets/images/zj.png">
+    <link rel="shortcut icon" href="../assets/images/zj.png">
 
-    <!-- jvectormap -->
-    <link href="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+<!--   jvectormap -->
+   <link href="../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
     <link href="../assets/plugins/fullcalendar/vanillaCalendar.css" rel="stylesheet" type="text/css"  />
 
     <link href="../assets/plugins/morris/morris.css" rel="stylesheet">
@@ -23,10 +22,24 @@
 
     <link href="../assets/plugins/alertify/css/alertify.css" rel="stylesheet" type="text/css">
 
+
+    <!--/google-fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <!--//google-fonts-->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../assets/css/style-starter.css" type="text/css">
+	
+	
 </head>
 
 
+
 <body class="fixed-left">
+
+
 
 <!-- Loader -->
 <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
@@ -39,291 +52,582 @@
 
 
     <div class="content-page" style="margin-left: 0px">
-        <div class="content">
+        <div class="">
+			
+		
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke px-0">
+               <h1> <a class="navbar-brand" href="index.html">
+                        <span class="hny-log">D</span>eepKE
+                    </a></h1>
+<!--                if logo is image enable this   -->
+<!--    <a class="navbar-brand" href="#index.html">
+        <img src="../assets/images/logo_openkg.png" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
 
-            <!-- Top Bar Start -->
-            <div class="topbar">
-
-                <nav class="navbar-custom" style="padding-right: 13px">
-                    
-                    <ul class="list-inline float-left mb-0">
-                        <div class="topbar-left">
-                            <div >
-                                <!--<a href="index.html" class="logo"><i class="mdi mdi-assistant"></i> Zoter</a>-->
-                                <a href="https://github.com/zjunlp/deepke" class="logo">
-                                    <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                    <img src="../assets/images/logo_openkg.png" alt="" class="logo-large" style="height: 70px;">
-                                </a>
-                            </div>
-                        </div>
-                    </ul>
-
-                    
-
-                    <ul class="list-inline float-right mb-0">
-
-                        <li class="list-inline-item dropdown notification-list" style="padding: 10px;">
-                            <a href="https://azft.alibaba.com/lab/?id=7" role="button >
-                                       aria-haspopup="false" aria-expanded="false">
-                            <img src="../assets/images/zjus.jpeg" alt="user" class="rounded-circle" style="height: 50px;width: auto;">
-                            </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-
-                    </ul>
-
-                    <ul class="list-inline float-right mb-0">
-
-                        <li class="list-inline-item dropdown notification-list" style="padding: 15px;">
-                            
-                            <button class="button2">English</button>
-                            <a href="../CN/index.html">
-                                <button class="button2" ">中文</button>
-                            </a>
-                            
+                        <li class="nav-item">
+                            <a class="nav-link" href="re_doc_show.html">Demo</a>
                         </li>
-
-                    </ul>
-
-                    <div class="clearfix">
-                        <ul>
-                            <li><a href="index.html">Homepage</a> </li>
-                            <li><a href="re_doc_show.html">Demo</a> </li>
-                            <li><a href="https://github.com/zjunlp/deepke">Download</a> </li>
-                            <li><a href="contract_us.html">Contract us</a> </li>
-                            <li><a href="https://zjunlp.github.io/DeepKE">Doc</a> </li>
-                            <li><a href="http://openkg.cn/">OpenKG</a></li>
-                        </ul>
-                    </div>
-
-                </nav>
-
-            </div>
-            <!-- Top Bar End -->
-
-            <div class="page-content-wrapper" style="background-color: white;">
-
-                <div class="container-fluid">
-
-                    <div class="jumbotron jumbotron-fluid back"  >
-                        <div class="row header p-6 m-5">
-                          <div class="p-1 mx-auto text-center text-zju col-md-9 col-sm-12" >
-                            <h3>
-                              <b ">Deep Learning Based Knowledge Extraction Toolkit for Knowledge Base Population</b><br>
-                            </h3>
-                          </div>
-                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/zjunlp/deepke">Download</a>
+                        </li>
                       
-                    </div>
+<!--                        <li class="nav-item">
+                            <a class="nav-link" href="contract_us.html">Contact</a>
+                        </li> -->
+						
+						<li class="nav-item">
+						    <a class="nav-link" href="https://zjunlp.github.io/DeepKE">Document</a>
+						</li>
+						
+						<li class="nav-item">
+						    <a class="nav-link" href="http://openkg.cn/">OpenKG</a>
+						</li>
 
-                    <div class="row" style="background-color: white;" >  
-                        <div class="col-sm-12 p-1 mx-auto" >
-                            <div class="page-title-box">
-                                <h4 class="text-zju" style="padding-top:5px; padding-left:17%; ">
-                                    <b >Architecture</b>
-                                </h4>
-                            </div>
-                        </div>                      
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
+						<li class="nav-item">
+							<a class="nav-link" style="padding-left: 100px;" > English</a>
+						</li>
 
-                        <div class=" col-md-4 p-1 mx-auto text-center" >
-                            <div class="card">
-                                <div class="card-body active">
-                                   
-                                    <div style="width: 100%; margin: auto; ">
-                                        <img class="logo" src="../assets/images/logo.png" alt="user" style="width: 100%;height: auto;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-4 p-1 mx-auto text-center">
-                            <div class="card " >
-                                <div class="card-body active">
-                                   
-                                    <div style="width: 100%; margin: auto; ">
-                                        <img class="logo" src="../assets/images/architectures.png" alt="user" style="width: 100%;height: auto;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-
-                        
-                        
-                        <div class="col-sm-12 p-1 mx-auto">
-                            <div class="page-title-box">
-                                <h4 class="text-zju" style="padding-top:5px; padding-left:17%; ">
-                                    <b >Features</b>
-                                </h4>
-                            </div>
-                        </div>
-                        
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead"  >
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color: rgb(242, 245, 106);">Multiple extraction tasks</span>
-                                    <br>
-                                    <h7 class="text-zju">DeepKE contains three modules for named entity recognition, relation extraction and attribute extraction, the three tasks respectively.</h7> 
-                                </div>
-                            </div>
-                        </div>
-                                
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;" >
-                                    <span style="font-weight:bold; color:rgb(248, 165, 109);">Multiple scene settings</span>
-                                    <br>
-                                    <h7 class="text-zju">Each module has its own submodules. For example, there are standard, document-level and few-shot submodules in the attribute extraction modular.<h7>                            
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead" ">
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color:rgb(116, 211, 248)">Multiple usage modes</span>
-                                    <br>
-                                    <h7 class="text-zju">You can use directly by pip, and you can also modify the code to use by 'python setup.py instll'.</h7>
-                                </div>              
-                            </div>
-                        </div>
-                            
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color:rgb(125, 248, 125)">Online demo</span>
-                                    <br>
-                                    <a href="re_doc_show.html">
-                                        <h7 class="text-zju"'>Try to use the model !!! <br> Click here directly !!!</h7>
-                                    </a>
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-
-                        <div class="col-sm-12 p-1 mx-auto">
-                            <div class="page-title-box">
-                                <h4 class="text-zju" style="padding-top:5px; padding-left:17%">
-                                    <b>Examples</b>
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light " >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color:skyblue;">Standard NER</span>
-                                    <a href="https://zjunlp.github.io/DeepKE/example.html#standard-ner" class="logo">
-                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                        <img src="../assets/images/standard NER.png" style="width:100%; margin: auto;">
-                                    </a>
-
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                                
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color: skyblue;">Few-shot NER</span>
-                                    <a href="https://zjunlp.github.io/DeepKE/example.html#few-shot-ner" class="logo">
-                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                        <img src="../assets/images/Few-shot NER.png" style="width:100%; margin: auto;">
-                                    </a>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light">
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color: rgb(166, 201, 137);">Standard RE</span>
-                                    <a href="https://zjunlp.github.io/DeepKE/example.html#standard-re" class="logo">
-                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                        <img src="../assets/images/standard RE.png" style="width:100%; margin: auto;">
-                                    </a>
-                                    <br>
-                                </div>              
-                            </div>
-                        </div>
-                            
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color: rgb(166, 201, 137);">Few-shot RE</span>
-                                    <a href="https://zjunlp.github.io/DeepKE/example.html#few-shot-re" class="logo">
-                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                        <img src="../assets/images/Few-shot RE.png" style="width:100%; margin: auto;">
-                                    </a>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light">
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color: rgb(166, 201, 137);">Document RE</span>
-                                    <a href="https://zjunlp.github.io/DeepKE/example.html#document-re" class="logo">
-                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                        <img src="../assets/images/Document-level RE.png" style="width:100%; margin: auto;">
-                                    </a>
-
-                                    <br>
-                                </div>              
-                            </div>
-                        </div>
-                            
-                        <div class="col-md-4 p-1 mx-auto col-sm-12 pr-5 lead">
-                            <div class="pp-card m-3 bg-light" >
-                                <div class="card-header-large" style="background-color: white;">
-                                    <span style="font-weight:bold;color:rgb(173, 33, 173);">Standard AE</span>
-                                    <a href="https://zjunlp.github.io/DeepKE/example.html#standard-ae" class="logo">
-                                        <!-- <img src="assets/images/logo-lg.png" alt="" class="logo-large"> -->
-                                        <img src="../assets/images/AE.png" style="width:100%; margin: auto;">
-                                    </a>
-
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 p-1 mx-auto text-center" >
-                        </div>
-                        
-                        
+						<li class="nav-item">
+							<a class="nav-link" style="padding-left: -10px;" href="../CN/index.html">中文</a>	
+						</li>
+                    </ul>
+					
+                </div>
+				<!-- toggle switch for light and dark theme -->
+				<div class="cont-ser-position">
+				    <nav class="navigation">
+				        <div class="theme-switch-wrapper">
+				            <label class="theme-switch" for="checkbox">
+				                <input type="checkbox" id="checkbox">
+				                <div class="mode-container">
+				                    <i class="gg-sun"></i>
+				                    <i class="gg-moon"></i>
+				                </div>
+				            </label>
+				        </div>
+				    </nav>
+				</div>
+				<!-- //toggle switch for light and dark theme -->
 
 
 
-                    </div>
-                     <!-- end row -->
 
-                </div><!-- container -->
 
-            </div> <!-- Page content Wrapper -->
+            </nav>
+        </div>
+    </header>
 
-        </div> <!-- content -->
+			
+			<!-- banner section -->
+			<section id="home" class="w3l-banner py-5">
+			    <div class="container py-lg-5 py-md-4 mt-lg-0 mt-5">
+			        <div class="row align-items-center py-lg-5 py-4 mt-4">
+			            <div class="col-lg-6 col-sm-12 mt-lg-5">
+			                <h3 class="mb-4 title">Deep connection of <br> <span class="type-js"><span class="text-js"> World Knowledge</span></span><br>
+			                     Extraction Tool.</h3>
+			                <div class="separatorhny"></div>
+			                <p>Deep Learning Based Knowledge Extraction Toolkit for Knowledge Base Population</p>
+			
+			                <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
+			                    <!-- <a href="about.html" class="btn btn-style btn-white mr-lg-4 mr-sm-3"> Read More</a> -->
+			                    <a class="btn btn-primary btn-style" href="contract_us.html">Contact Us</a>
+			
+			
+			                </div>
+			            </div>
+			            <div class="col-lg-5 offset-lg-1 col-md-8 col-sm-10 mt-lg-0 mt-5">
+			                <div class="banner-play-w3 text-lg-center">
+			                    <!--//video-->
+			                    <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+			                        <span class="video-play-icon">
+			                            <span class="fa fa-play"></span>
+			                        </span>
+			                    </a>
+			
+			                    <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+			                    <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+			                        <iframe src="https://player.vimeo.com/video/326582338" frameborder="0"
+			                            allow="autoplay; fullscreen" allowfullscreen></iframe>
+			                    </div>
+			                    <!--//video-->
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    </div>
+			</section>
+			<!-- //banner section -->
+			
+			
+			
+			<!-- /content-1-->
+			        <div class="content-1 py-5">
+			            <div class="container py-md-5">
+			                <div class="row content-1-grids">
+			                    <div class="col-lg-5 content-1-left forms-25-info">
+			                        <div class="header-title">
+			                            <h3 class="hny-title mb-4">
+			                                Features
+			                            </h3>
+			                        </div>
+			                    </div>
+			                    <div class="col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-4">
+			                        <p class="">DeepKE is a knowledge extraction toolkit supporting low-resource and document-level scenarios. 
+									It provides three functions based PyTorch, including Named Entity Recognition, Relation Extraciton and Attribute Extraction.
+			                        </p>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    <!-- //content-1-->
+
+				<section class="w3l-bottom-grids-6 py-5" id="features">
+				    <div class="container py-lg-5 py-md-4">
+				        <div class="grids-area-hny main-cont-wthree-fea row">
+				            <div class="col-lg-7 features-lefthny">
+				                <div class="row">
+				                    <!-- /feature-left-->
+				                    <div class="col-md-6 grids-feature">
+				                        <div class="area-box">
+				                            <span class="fa fa-users"></span>
+				                            <h4><a href="#feature" class="title-head">Multiple extraction tasks</a></h4>
+				                            <p class="mt-3">DeepKE contains three modules for named entity recognition, relation extraction and attribute extraction, the three tasks respectively.</p>
+				                        </div>
+				                    </div>
+				                    <div class="col-md-6 grids-feature mt-sm-0 mt-4">
+				                        <div class="area-box">
+				                            <span class="fa fa-tasks"></span>
+				                            <h4><a href="#feature" class="title-head">Multiple scene settings</a></h4>
+				                            <p class="mt-3">Each module has its own submodules. For example, there are standard, document-level and few-shot submodules in the attribute extraction modular.</p>
+				                        </div>
+				                    </div>
+				                    <div class="col-md-6 grids-feature mt-4">
+				                        <div class="area-box">
+				
+				                            <span class="fa fa-pencil-square-o"></span>
+				                            <h4><a href="#feature" class="title-head">Multiple usage modes</a></h4>
+				                            <p class="mt-3">You can use directly by pip, and you can also modify the code to use by 'python setup.py instll'..</p>
+				                        </div>
+				                    </div>
+				                    <div class="col-md-6 grids-feature mt-4">
+				                        <div class="area-box">
+				
+				                            <span class="fa fa-video-camera "></span>
+				                            <h4><a href="#feature" class="title-head">Online demo</a></h4>
+				                            <p class="mt-3">Try to use the model !!!  <br> Click here directly !!</p>
+				                        </div>
+				                    </div>
+				                </div>
+				                <!-- //feature-left-->
+				            </div>
+				            <div class="col-lg-5 features-rightthny mt-lg-0 mt-5 pl-lg-5">
+				                <h3 class="hny-title mb-4">The commonality of these tasks inspires us whether there is a universal framework.</h3>
+				                <div class="separatorhny"></div>
+				                <p>Motivated by this, we formulate those tasks regarding both token and sentence as universal extraction and design a simple unified model. 
+								Our prototype model studies the possibility of bridging the gap between tasks with single architecture and providing future insight for unified natural language understanding. 
+								Furthermore, as there is a lack of practical and stable toolkit to support the implementation, deployment and evaluation of those tasks, 
+								we develop a toolkit which is a compliment for existing toolsets such as Spacy2 for named entity recognition, 
+								TagMe for entity linking , OpenKE for knowledge embedding,
+								 Stanford OpenIE for open information extraction, and OpenNER for relation extraction.
+								</p>
+				                <a class="btn btn-primary btn-style mt-md-5 mt-4" href="re_doc_show.html">Read More</a>
+				            </div>
+				
+				        </div>
+				    </div>
+				</section>
+				
+				
+				
+				<!-- //bottom-grids-->
+				<section class="w3l-servicesblock py-5" id="about">
+				    <div class="container py-lg-5 py-md-3">
+				      <div class="row">
+<!-- 				        <div class="col-lg-3 col-6 left-wthree-img">
+				            <img src="../assets/images/logo.png" alt="" class="img-fluid radius-image">
+				          </div>
+				          <div class="col-lg-3 col-6 left-wthree-img">
+				            <img src="../assets/images/architectures.png" alt="" class="img-fluid radius-image">
+				          </div> -->
+						  <div class="col-lg-6 col-6 mfp-img">
+						    <img src="../assets/images/demo.gif" alt="" class="img-fluid radius-image">
+						  </div> 
+				        <div class="col-lg-6 about-right-faq align-self mt-lg-0 mt-sm-5 mt-4 pl-lg-5">
+				          <h3 class="hny-title mb-4">Display Prediction Process</h3>
+				          <div class="separatorhny"></div>
+				          <p class="">DeepKE contains three modules for named entity recognition, relation extraction and attribute extraction, the three tasks respectively.
+						  
+						  
+						  </p>
+				          <div class="two-grids mt-md-0 mt-md-5 mt-4">
+				            <div class="grids_info">
+				              <h4>Each module has its own submodules</h4>
+				              <p class=""> For example, there are standard, document-level and few-shot submodules in the attribute extraction modular.</p>
+				            </div>
+				            <div class="grids_info">
+				              <h4>Each submodule compose of three parts</h4>
+				              <p class="">A collection of tools, which can function as tokenizer, dataloader, preprocessor and the like, a encoder and a part for training and prediction.</p>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </section>
+				<!-- stats -->
+				<section class="w3_stats py-5" id="stats">
+				    <div class="container py-md-4">
+				        <div class="w3-stats">
+				            <div class="row">
+				                <div class="col-md-3 col-6">
+				                    <div class="counter">
+				                        <span class="fa fa-database"></span>
+				                        <div class="timer count-title count-number mt-3" data-to="4123234582" data-speed="500000000"></div>
+				                        <p class="count-text">Total Triples</p>
+				                    </div>
+				                </div>
+				                <div class="col-md-3 col-6">
+				                    <div class="counter">
+				                        <span class="fa fa-users"></span>
+				                        <div class="timer count-title count-number mt-3" data-to="14240" data-speed="1500"></div>
+				                        <p class="count-text ">Users</p>
+				                    </div>
+				                </div>
+				                <div class="col-md-3 col-6">
+				                    <div class="counter">
+				                        <span class="fa fa-star"></span>
+				                        <div class="timer count-title count-number mt-3" data-to="758" data-speed="50"></div>
+				                        <p class="count-text">Stars</p>
+				                    </div>
+				                </div>
+				                <div class="col-md-3 col-6">
+				                    <div class="counter">
+				                        <span class="fa fa-clone"></span>
+				                        <div class="timer count-title count-number mt-3" data-to="225" data-speed="20"></div>
+				                        <p class="count-text">Fork</p>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</section>
+				<!-- //stats -->
+				
+				
+				<!-- //stats -->
+				<div class="w3l-homeblog py-5" id="homeblog">
+				    <div class="container py-lg-5 py-md-4">
+				        <h6 class="sub-titlehny text-center">Application Scenarios</h6>
+				        <h3 class="hny-title mb-md-5 mb-4 pb-md-0 pb-2 text-center">Toolkit Design and Implementation</h3>
+				        <div class="row top-pics">
+				            <div class="col-lg-6 col-md-6">
+				                <div class="top-pic1">
+				                    <div class="card-body blog-details">
+				                        <p>News</p>
+				                        <a href="#Standard RE" class="blog-desc">Standard RE
+				                        </a>
+
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="col-lg-6 mt-md-0 mt-4">
+				                <div class="row">
+				                    <div class="col-md-6 top-1">
+				                        <div class="top-pic2">
+				                            <div class="card-body blog-details">
+				                                <p>News</p>
+				                                <a href="#Standard NER" class="blog-desc">Standard NER
+				                                </a>
+
+				                            </div>
+				                        </div>
+				                    </div>
+				                    <div class="col-md-6 top-1 mt-md-0 mt-4">
+				                        <div class="top-pic3">
+				                            <div class="card-body blog-details">
+				                                <p>News</p>
+				                                <a href="#Document RE" class="blog-desc">Document RE
+				                                </a>
+
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				
+				            <div class="readhny-btm text-center mx-auto mt-md-4">
+				                <a class="btn btn-primary btn-style mt-md-5 mt-4" href="about.html">Read More</a>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+
+		<!-- middle -->
+		    <div class="middle py-5">
+		        <div class="container py-md-4">
+		            <div class="welcome-left text-left py-lg-4">
+		                <h3 class="hny-title mb-4">Knowledge extraction from the Web</h3>
+		                <div class="separatorhny"></div>
+		                <p class="pr-lg-5 mr-lg-5">
+						DeepKE implements crawler to obtain raw web pages and extract fact knowledge. 
+						The recent knowledge graph is far from complete, while vast numbers of facts exist in web pages. 
+						DeepKE is suitable to serve as a schemabased never ended learner from the Web.</p>
+		                <a href="#about" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Read More</a>
+		                <a href="#contact" class="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us</a>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- //middle -->
+		<!-- testimonials -->
+		<section class="w3l-clients-1" id="testimonials">
+		    <!-- /grids -->
+		    <div class="cusrtomer-layout py-5">
+		        <div class="container py-lg-5 py-md-4">
+		            <div class="heading align-self text-center">
+		                <h6 class="sub-titlehny">Testimonials</h6>
+		                <h3 class="hny-title mb-md-5 mb-4">What Developers Say</h3>
+		            </div>
+		            <!-- /grids -->
+		            <div class="testimonial-row">
+		                <div id="owl-demo1" class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4">
+		                    <div class="item">
+		                        <div class="testimonial-content">
+		                            <div class="testimonial">
+		                                <div class="test-img">
+		                                    <img src="../assets/images/team1.jpg" class="img-fluid" alt="client-img">
+		                                </div>
+		                                <blockquote>
+		                                    <q>
+												Natural language processing covers a wide variety of tasks with token-level or sentencelevel understandings.
+												We provide a simple insight that most tasks can be represented in a single universal extraction format.
+												To be specific, we introduce a prototype model and provide an open-source and extensible toolkit called
+												DeepKE for various extraction tasks.
+											
+											
+											</q>
+		                                </blockquote>
+		                                <div class="testi-des">
+		                                    <div class="peopl align-self">
+		                                        <h3>Ningyu Zhang</h3>
+		                                        <p class="indentity">AZFT Researcher </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="item">
+		                        <div class="testimonial-content">
+		                            <div class="testimonial">
+		                                <div class="test-img"><img src="../assets/images/team2.jpg" class="img-fluid"
+		                                        alt="client-img">
+		                                </div>
+		                                <blockquote>
+		                                    <q>
+												The essence of a knowledge graph is to use the graph's structure to describe the 
+												relationship between things and precipitate domain knowledge. It is an important
+												 cornerstone to realize cognitive intelligence. It has been widely used in many fields, 
+												 such as search engines, intelligent question and answer, language semantic understanding,
+												  extensive data decision analysis, etc.
+												</q>
+		                                </blockquote>
+		                                <div class="testi-des">
+		                                    <div class="peopl align-self">
+		                                        <h3>Huajun Chen</h3>
+		                                        <p class="indentity"> Zhejiang University Professor </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="item">
+		                        <div class="testimonial-content">
+		                            <div class="testimonial">
+		                                <div class="test-img"><img src="../assets/images/team3.jpg" class="img-fluid"
+		                                        alt="client-img">
+		                                </div>
+		                                <blockquote>
+		                                    <q>DeepKE allows developers to train custom models to extract information 
+												from the text and supports quick model validation for researchers.
+												I think this work can bring convenience and inspiration to industry and academia.
+												
+												</q>
+		                                </blockquote>
+		                                <div class="testi-des">
+		                                    <div class="peopl align-self">
+		                                        <h3>Fei Huang </h3>
+		                                        <p class="indentity">Alibaba Damo Academy Senior Algorithm Expert </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="item">
+		                        <div class="testimonial-content">
+		                            <div class="testimonial">
+		                                <div class="test-img"><img src="../assets/images/team4.jpg" class="img-fluid"
+		                                        alt="client-img">
+		                                </div>
+		                                <blockquote>
+		                                    <q>
+<!-- 												We provide a prototype model implementation of universal extraction and introduce an open and extensible toolkit, namely, DeepKE. 
+											Additionally, we conduct extensive experiments which demonstrate that the models implemented by DeepKE are efficient, effective,
+											 and can achieve comparable performance compared to the state-of-the-art results. -->
+											 In the future, we plan to utilize the multitask learning or meta-learning algorithms to enhance extraction performance. 
+											We will provide long-term maintenance to fix bugs and meet new requests.
+											</q>
+		                                </blockquote>
+		                                <div class="testi-des">
+		                                    <div class="peopl align-self">
+		                                        <h3>Hongbin Ye</h3>
+		                                        <p class="indentity">Zhejiang University Phd Student </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <!-- /grids -->
+		    </div>
+		    <!-- //grids -->
+		</section>
+		<!-- //testimonials -->
+
+		
+		
+		<!-- footer -->
+		<section class="w3l-footer-29-main">
+		    <div class="footer-29 py-5">
+		        <div class="container py-lg-4">
+		            <div class="row footer-top-29">
+		                <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
+		                    <div class="footer-logo mb-3">
+		                        <a class="navbar-brand" href="#Advisory">Advisory</a>
+		                    </div>
+		                    <p>If you have any new suggestions for our toolkit, please contact us, we will try to meet your
+							requirements, thank you for your support and understanding.
+								</p>
+		                    <div class="main-social-footer-29 mt-4">
+		                        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+		                        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+		                        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+		                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+		                    </div>
+		                </div>
+		                <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
+		
+		                    <ul>
+		                        <h6 class="footer-title-29">Usefull Links</h6>
+		                        <li><a href="#About">About Us</a></li>
+		                        <li><a href="#Blog"> Blog posts</a></li>
+		                        <li><a href="#careers"> Careers</a></li>
+		                        <li><a href="#Services">Services</a></li>
+		                        <li><a href="contact.html">Contact us</a></li>
+		                    </ul>
+		                </div>
+		                <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+		                    <h6 class="footer-title-29">More Info</h6>
+		                    <ul>
+		                        <li><a href="#profile">Group Profile</a></li>
+		                        <li><a href="#history">History</a></li>
+		                        <li><a href="#award">Awards</a></li>
+		                        <li><a href="#media"> Media</a></li>
+		                        <li><a href="#support"> Support</a></li>
+		                    </ul>
+		
+		                </div>
+		                <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+		                    <h6 class="footer-title-29">Contact Info </h6>
+		                    <p><strong>Address :</strong> Zhejiang University, No. 38, Yuquan Campus, Zhejiang University, Hangzhou - 310007.</p>
+		                    <p><strong>Email :</strong> <a href="mailto:zhangningyu@zju.edu.cn">zhangningyu@zju.edu.cn</a></p>
+		
+		                    <div class="map-iframe-ft mt-4">
+<!-- 		                        <iframe
+		                            src="uri.amap.com/marker?position=120.122072,30.264244&name=Our Location&src=&coordinate=&callnative=0"
+		                            width="100%" height="400" frameborder="0" style="border: 0px;"
+		                            allowfullscreen=""></iframe> -->
+								<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/s/6DQHFb"></iframe>
+		                    
+							
+							
+							</div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		<!-- //footer -->
+            
+		<!-- copyright -->
+		<section class="w3l-copyright">
+		    <div class="container">
+		        <div class="row bottom-copies">
+		            <p class="col-lg-8 copy-footer-29">Copyright© 2019-2021 <a href="http://openkg.cn/">OpenKG </a> All Rights Reserved</p>
+		
+		            <div class="col-lg-4 footer-list-29">
+		                <ul class="d-flex text-lg-right">
+		                    <li><a href="#careers"> Careers</a></li>
+		                    <li class="mx-lg-5 mx-md-4 mx-3"><a href="#privacy">Privacy Policy</a></li>
+		                    <li><a href="#Contact">Contact us</a></li>
+		                </ul>
+		            </div>
+		
+		        </div>
+		    </div>
+		
+		    <!-- move top -->
+		    <button onclick="topFunction()" id="movetop" title="Go to top">
+		        &#10548;
+		    </button>
+		    <script>
+		        // When the user scrolls down 20px from the top of the document, show the button
+		        window.onscroll = function () {
+		            scrollFunction()
+		        };
+		
+		        function scrollFunction() {
+		            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		                document.getElementById("movetop").style.display = "block";
+		            } else {
+		                document.getElementById("movetop").style.display = "none";
+		            }
+		        }
+		
+		        // When the user clicks on the button, scroll to the top of the document
+		        function topFunction() {
+		            document.body.scrollTop = 0;
+		            document.documentElement.scrollTop = 0;
+		        }
+		    </script>
+		    <!-- /move top -->
+		</section>
+		<!-- //copyright -->	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	<!-- content -->
+<!--    </div> 
+		
 
         <footer class="footer" >
             Visitors' number: <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>
@@ -332,11 +636,16 @@
 
         </footer>
 
-    </div>
+    </div> -->
     <!-- End Right content here -->
 
 </div>
 <!-- END wrapper -->
+
+
+
+
+
 
 
 <!-- jQuery  -->
@@ -373,6 +682,107 @@
 <!-- <script src="assets/incubator-echarts/dist/echarts.js"></script> -->
 <!-- <script src="https://www.gstatic.com/charts/loader.js"></script> -->
 <!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script> -->
+
+
+    <script src="../assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+	<script src="../assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+
+    <!-- /counter-->
+    <script src="../assets/js/counter.js"></script>
+    <!-- //counter-->
+    <script src="../assets/js/owl.carousel.js"></script><!-- owl carousel -->
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+
+	
+
 
 </body>
 </html>
